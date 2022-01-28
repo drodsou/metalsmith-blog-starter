@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/sakura-multi.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="generator" content="metalsmith">
+</head>
+<body>
+  
+
+    <header>
+      <nav>
+        {{ sitename }} |
+        <a href="/">Home</a> | 
+        <a href="/about">About</a>
+      </nav>
+      <h1>{{ title }}<time>{{ formattedDate date }}</time></h1>
+    </header>
+
+    <main>
+      {{{ contents }}}
+    </main>
+
+    <footer>
+      <p>Generated with {{ generator }} &mdash; <a href="{{ url }}">{{ url }}</a></p>
+    </footer>
+
+  
+
+</body>
+</html>
